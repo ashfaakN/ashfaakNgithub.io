@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- The DOCTYPE declaration defines the document type and version of HTML -->
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Title of the webpage -->
+    <title>THE NUTRI STORE</title>
+    <!-- Linking external stylesheet for styling -->
+    <link rel="stylesheet" href="nutri.css">
+</head>
+<body>
+    <!-- Main heading of the webpage -->
+    <h1>THE NUTRI STORE</h1>
+     <!-- Navigation section with a list of links and a menu toggle button -->
+    <nav>
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">&#9776;</div>
+    </nav>
+     <!-- Section for displaying products with images, names, and order buttons -->
+    <section class="item">
+        <div class="item1">
+            <div class="product-info">
+                <img src="whey.webp" alt="Whey Protein">
+                <h4>WHEY PROTEIN</h4>
+            </div>
+            <button>Order</button>
+        </div>
+        <div class="item2">
+            <div class="product-info">
+                <img src="creatine.webp" alt="Creatine">
+                <h4>CREATINE</h4>
+            </div>
+            <button>Order</button>
+        </div>
+        <div class="item1">
+            <div class="product-info">
+                <img src="fat burner.webp" alt="Fat Burner">
+                <h4>FAT BURNER</h4>
+            </div>
+            <button>Order</button>
+        </div>
+        <div class="item3">
+            <div class="product-info">
+                <img src="aminamin.webp" alt="amino acid">
+                <h4>AMINO ACID</h4>
+            </div>
+            <button>Order</button>
+        </div>
+        <div class="item1">
+            <div class="product-info">
+                <img src="gnc.webp" alt="gnc webp">
+                <h4>GNC MEN SUPPLEMENT</h4>
+            </div>
+            <button>Order</button>
+        </div>
+        <div class="item1">
+            <div class="product-info">
+                <img src="isowhey.webp" alt="iso whey">
+                <h4>ISO WHEY</h4>
+            </div>
+            <button>Order</button>
+        </div>
+        <div class="item3">
+            <div class="product-info">
+                <img src="lcarnite.webp" alt="l-carnite">
+                <h4>L-CARNITE</h4>
+            </div>
+            <button>Order</button>
+        </div>
+        <div class="item1">
+            <div class="product-info">
+                <img src="pre.webp" alt="pre workout">
+                <h4>PRE WORKOUT</h4>
+            </div>
+            <!-- Order button for the product -->
+            <button>Order</button>
+        </div>
+        <!-- Similar structure for other product items -->
+        <div class="promotion-box" id="promotionBox">
+            <p class="promotion-text">
+              GET 50% OFF ON YOUR FIRST ORDER WITH US! <br> 
+              NEWEST DEAL IN TOWN
+            </p>
+            <button class="button show-promotion" onclick="togglePromotion()">
+              SHOW OFFER
+            </button>
+          </div>
+          <!-- Script tag to link the JavaScript file -->
+    <script src="nutri.js"></script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+/* Global reset and styling for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Background color for the entire page */
+body {
+    background-color: #f9f9f9;
+}
+
+/* Styling for the main heading */
+h1 {
+    text-align: center;
+    color: #2262F5; /* Heading color */
+    padding: 20px;
+}
+
+/* Styling for the navigation bar */
+nav {
+    background-color: #0A44CB; /* Navigation bar background color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Styling for the navigation list */
+.nav-list {
+    list-style-type: none;
+    display: flex;
+}
+
+/* Styling for navigation list items */
+.nav-list li {
+    margin: 0 15px;
+}
+
+/* Styling for navigation links */
+.nav-list a {
+    text-decoration: none;
+    color: #fff; /* Navigation link color */
+    transition: color 0.3s ease-in-out;
+}
+
+/* Styling for navigation links on hover */
+.nav-list a:hover {
+    color: #ecf0f1; /* Navigation link color on hover */
+}
+
+/* Styling for the menu toggle button */
+.menu-toggle {
+    font-size: 24px;
+    color: #fff; /* Menu toggle button color */
+    cursor: pointer;
+    display: none;
+}
+
+/* Styling for the product grid */
+.item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px 20px;
+    grid-gap: 30px;
+}
+
+/* Styling for individual product items */
+.item1 {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    text-align: center;
+    background-color: #fff; /* Product item background color */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for product images on hover */
+.item1 img:hover {
+    transform: scale(1.04);
+}
+
+/* Styling for product names in item1 */
+.item1 h4 {
+    padding: 5px;
+    text-align: center;
+    color: #333; /* Product name color */
+}
+
+/* Styling for order buttons in item1 */
+.item1 button {
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    background-color: #0A44CB; /* Order button background color */
+    color: #0A44CB; /* Order button text color */
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 18px;
+    display: block;
+}
+
+/* Styling for order buttons on hover */
+.item1 button:hover {
+    background-color: #0A44CB;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 1000px) {
+    /* Responsive styling adjustments for medium-sized screens */
+    .item {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Responsive styling adjustments for smaller screens */
+    .item {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Styling adjustments for the navigation list on smaller screens */
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #3498db;
+    }
+
+    /* Styling adjustments for the visible navigation list on smaller screens */
+    .nav-list.show {
+        display: flex;
+    }
+
+    /* Styling adjustments for the menu toggle button on smaller screens */
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* Additional media queries for various screen sizes */
+@media screen and (max-width: 320px) {
+    /* Styling adjustments for screens with a maximum width of 320px */
+}
+
+@media screen and (max-width: 375px) {
+    /* Styling adjustments for screens with a maximum width of 375px */
+}
+
+@media screen and (max-width: 411px) {
+    /* Styling adjustments for screens with a maximum width of 411px */
+}
+
+@media screen and (max-width: 1440px) {
+    /* Styling adjustments for screens with a maximum width of 1440px */
+}
+
+/* Styling adjustments for the navigation list at different screen sizes */
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Styling adjustments for navigation list items at different screen sizes */
+.nav-list li {
+    margin: 0 15px;
+}
+
+/* Styling adjustments for order buttons in item1 at different screen sizes */
+.item1 button {
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: #3498db; /* Order button background color */
+    color: #fff; /* Order button text color */
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    display: block;
+    margin-top: 10px;
+}
+/* Styling adjustments for order buttons on hover in item1 at different screen sizes */
+.item1 button:hover {
+    background-color: #2979ab;
+}
+
+/* Styling adjustments for navigation list */
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+/* Styling adjustments for navigation list items */
+.nav-list li {
+    margin: 0 15px;
+}
+/* Styling adjustments for order buttons in item2 at different screen sizes */
+.item2 button{
+    width: 150px; 
+    height: 40px; 
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: #3498db;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px; 
+    display: block;
+    margin-top: 95px; 
+}
+/* Styling adjustments for product grid item2 at different screen sizes */
+.item2 {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Styling adjustments for order buttons in item3 at different screen sizes */
+
+.item3 button{
+    width: 150px;
+    height: 40px; 
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: #3498db;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    display: block;
+    margin-top: 50px; 
+}
+/* Styling adjustments for product grid item3 at different screen sizes */
+.item3 {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Styling for the promotion box */
+.promotion-box {
+    background-color: #85888E; 
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: #fff; 
+    text-align: center;
+
+  }
+  /* Styling for the promotion text */
+  .promotion-text {
+    font-weight: bold;
+  }
+  /* Styling for the "SHOW OFFER" button */
+  .show-promotion {
+    background-color: #fff;
+    color: #050505; 
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
+
+
+  
+ 
+  
